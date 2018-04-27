@@ -11,7 +11,8 @@ module RandomGem
     end
 
     def self.get(length)
-       INTEGERS.sample
+      (0...length).map { LOWER_ALPHA.sample }.join
+      # (0...size).map{ charset.to_a[rand(charset.size)] }.join
     end
   end
 end
