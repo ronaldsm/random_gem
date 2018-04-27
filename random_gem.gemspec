@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "random_gem"
   spec.version       = RandomGem::VERSION
   spec.authors       = ["ronaldsm"]
-  spec.email         = ["ronaldsm@cisco.com"]
+  spec.email         = ["ron.smith.ca@gmail.com"]
 
   spec.summary       = %q{First ruby gem}
   spec.description   = %q{This gem is primarily to provide practice in creating one}
