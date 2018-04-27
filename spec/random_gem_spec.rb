@@ -1,7 +1,7 @@
 require 'pry-byebug'
 
 RSpec.describe RandomGem do
-  it "has a version number" do
+  it 'has a version number' do
     expect(RandomGem::VERSION).not_to be nil
   end
 end
