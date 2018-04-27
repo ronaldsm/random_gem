@@ -31,12 +31,15 @@ RSpec.describe RandomGem::Integer do
   end
 
   it 'can handle negative numbers' do
-    rand_num = RandomGem::Integer.get(-10,-1)
+    rand_num = RandomGem::Integer.get(-10, -1)
     expect(rand_num).to be < 0
     expect(rand_num).to be >= -10
     expect(rand_num).to be <= -1
   end
 
   it 'can handle numbers spanning from positive to negative' do
+    rand_num = RandomGem::Integer.get(-10, 10)
+    expect(rand_num).to be >= -10
+    expect(rand_num).to be <= 10
   end
 end
