@@ -22,4 +22,11 @@ RSpec.describe RandomGem::Integer do
     expect(RandomGem::Integer.get(5, 5)).to be <= 5
   end
 
+  it 'returns the number when it is both the max and min' do
+    expect(RandomGem::Integer.get(5, 5)).to eql 5
+  end
+
+  it 'should raise error if max is less than min' do
+    expect { RandomGem::Integer.get(5, 4) }.to raise_error(ArgumentError)
+  end
 end
